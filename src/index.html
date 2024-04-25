@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Calcut Blog - Updates, ideas, and inspiration from The Calcut Team to help students calculate cut-off
+    points and discover courses to do</title>
+
+  <!-- CSS -->
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- fonts -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap");
+  </style>
+
+</head>
+
+<body class="font-mont bg-calcut-white">
+
+  <!-- site layout -->
+  <section class="flex flex-col px-8 py-4 space-between">
+    <!-- nav bar -->
+    <nav
+      class="fixed top-0 left-0 right-0 px-2 py-2 border-b sm:space-y-2 sm:space-x-2 border-calcut-navy/20 bg-calcut-white md:flex md:justify-between lg:flex md:px-2 sm:px-2 text-calcut-navy"
+      id="main-nav">
+
+      <a class="flex items-center justify-center ml-4">
+
+        <svg class="w-48 fill-current hover:cursor-pointer" viewBox="0 0 597 97" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M80 23.3333V16.6667C80 7.46333 72.54 0 63.3333 0H16.6667C7.46333 0 0 7.46333 0 16.6667V23.3333H33.3333V30H0V50H13.3333V56.6667H0V63.3333C0 72.5367 7.46333 80 16.6667 80H63.3333C72.54 80 80 72.5367 80 63.3333V56.6667H53.3333V50H80V30H63.3333V23.3333H80ZM26.6667 60C26.6667 61.84 25.1767 63.3333 23.3333 63.3333C21.49 63.3333 20 61.84 20 60V46.6667C20 44.8267 21.49 43.3333 23.3333 43.3333C25.1767 43.3333 26.6667 44.8267 26.6667 46.6667V60ZM36.6667 60C36.6667 61.84 35.1767 63.3333 33.3333 63.3333C31.49 63.3333 30 61.84 30 60V46.6667C30 44.8267 31.49 43.3333 33.3333 43.3333C35.1767 43.3333 36.6667 44.8267 36.6667 46.6667V60ZM46.6667 60C46.6667 61.84 45.1767 63.3333 43.3333 63.3333C41.49 63.3333 40 61.84 40 60V46.6667C40 44.8267 41.49 43.3333 43.3333 43.3333C45.1767 43.3333 46.6667 44.8267 46.6667 46.6667V60ZM46.6667 33.3333C46.6667 35.1733 45.1767 36.6667 43.3333 36.6667C41.49 36.6667 40 35.1733 40 33.3333V20C40 18.16 41.49 16.6667 43.3333 16.6667C45.1767 16.6667 46.6667 18.16 46.6667 20V33.3333ZM56.6667 33.3333C56.6667 35.1733 55.1767 36.6667 53.3333 36.6667C51.49 36.6667 50 35.1733 50 33.3333V20C50 18.16 51.49 16.6667 53.3333 16.6667C55.1767 16.6667 56.6667 18.16 56.6667 20V33.3333Z" />
+          <path
+            d="M143.4 76.28C138.413 76.28 133.707 75.4 129.28 73.64C124.853 71.8533 120.947 69.4 117.56 66.28C114.173 63.1333 111.52 59.4933 109.6 55.36C107.68 51.2267 106.72 46.8 106.72 42.08C106.72 37.3333 107.68 32.8933 109.6 28.76C111.547 24.6 114.2 20.96 117.56 17.84C120.947 14.6933 124.84 12.24 129.24 10.48C133.667 8.69333 138.36 7.8 143.32 7.8C147.347 7.8 151.2 8.36 154.88 9.47999C158.56 10.6 161.68 12.0533 164.24 13.84L157.68 26.96C156.053 25.7333 154.053 24.76 151.68 24.04C149.307 23.32 146.853 22.96 144.32 22.96C141.387 22.96 138.653 23.44 136.12 24.4C133.587 25.36 131.36 26.7067 129.44 28.44C127.547 30.1733 126.067 32.2 125 34.52C123.96 36.8133 123.44 39.32 123.44 42.04C123.44 44.76 123.96 47.28 125 49.6C126.067 51.8933 127.547 53.9067 129.44 55.64C131.36 57.3733 133.587 58.72 136.12 59.68C138.653 60.64 141.387 61.12 144.32 61.12C146.853 61.12 149.307 60.76 151.68 60.04C154.053 59.32 156.053 58.3467 157.68 57.12L164.24 70.24C161.787 71.9467 158.733 73.3867 155.08 74.56C151.427 75.7067 147.533 76.28 143.4 76.28ZM188.798 76.28C185.038 76.28 181.625 75.3467 178.558 73.48C175.491 71.5867 173.051 69 171.238 65.72C169.425 62.4133 168.518 58.6533 168.518 54.44C168.518 50.36 169.385 46.6933 171.118 43.44C172.851 40.16 175.238 37.56 178.278 35.64C181.318 33.72 184.825 32.76 188.798 32.76C191.385 32.76 193.838 33.2 196.158 34.08C198.505 34.96 200.491 36.2 202.118 37.8V34.04H216.718V75H202.118V70.76C200.198 72.5733 198.118 73.9467 195.878 74.88C193.665 75.8133 191.305 76.28 188.798 76.28ZM193.198 63.92C195.011 63.92 196.611 63.52 197.998 62.72C199.385 61.8933 200.465 60.7733 201.238 59.36C202.011 57.9467 202.398 56.3333 202.398 54.52C202.398 52.7067 201.998 51.0933 201.198 49.68C200.425 48.2667 199.345 47.16 197.958 46.36C196.571 45.5333 194.985 45.12 193.198 45.12C191.438 45.12 189.851 45.5333 188.438 46.36C187.051 47.16 185.945 48.2667 185.118 49.68C184.318 51.0933 183.918 52.7067 183.918 54.52C183.918 56.3067 184.318 57.92 185.118 59.36C185.918 60.7733 187.011 61.8933 188.398 62.72C189.811 63.52 191.411 63.92 193.198 63.92ZM230.158 75V6.2H244.758V75H230.158ZM277.444 76.28C274.298 76.28 271.324 75.72 268.524 74.6C265.751 73.48 263.298 71.92 261.164 69.92C259.031 67.92 257.351 65.6133 256.124 63C254.898 60.36 254.284 57.5467 254.284 54.56C254.284 51.7067 254.858 48.9867 256.004 46.4C257.178 43.7867 258.804 41.4533 260.884 39.4C262.964 37.3467 265.404 35.7333 268.204 34.56C271.004 33.36 274.058 32.76 277.364 32.76C280.004 32.76 282.538 33.1333 284.964 33.88C287.418 34.6 289.351 35.5067 290.764 36.6L285.924 46.44C284.271 45.2667 282.191 44.68 279.684 44.68C277.471 44.68 275.618 45.1733 274.124 46.16C272.631 47.1467 271.511 48.4 270.764 49.92C270.044 51.44 269.684 52.9733 269.684 54.52C269.684 56.3067 270.098 57.9467 270.924 59.44C271.751 60.9333 272.924 62.1333 274.444 63.04C275.964 63.92 277.738 64.36 279.764 64.36C281.044 64.36 282.218 64.2 283.284 63.88C284.351 63.5333 285.231 63.1067 285.924 62.6L290.764 72.44C289.324 73.5067 287.404 74.4133 285.004 75.16C282.604 75.9067 280.084 76.28 277.444 76.28ZM321.011 76.28C313.064 76.28 307.331 74.7733 303.811 71.76C300.291 68.7467 298.531 63.8533 298.531 57.08V34.04H313.131V53.48C313.131 57.5067 313.717 60.3467 314.891 62C316.091 63.6267 318.131 64.44 321.011 64.44C323.917 64.44 325.957 63.6267 327.131 62C328.304 60.3467 328.891 57.5067 328.891 53.48V34.04H343.491V57.08C343.491 63.8533 341.731 68.7467 338.211 71.76C334.691 74.7733 328.957 76.28 321.011 76.28ZM371.03 76.28C366.603 76.28 363.15 74.8933 360.67 72.12C358.19 69.32 356.95 65.4133 356.95 60.4V45.12H350.99V34.04H356.95V18.68H371.55V34.04H380.11V45.12H371.55V59.32C371.55 60.6 371.803 61.5733 372.31 62.24C372.843 62.9067 373.617 63.24 374.63 63.24C375.803 63.24 376.963 62.8133 378.11 61.96L381.75 73.68C380.203 74.48 378.483 75.1067 376.59 75.56C374.697 76.04 372.843 76.28 371.03 76.28ZM411.791 75V9H428.951C435.324 9 440.297 10.4133 443.871 13.24C447.471 16.04 449.271 20.1733 449.271 25.64C449.271 32.6267 446.311 37.5067 440.391 40.28C445.137 41 448.777 42.7867 451.311 45.64C453.844 48.4667 455.111 52.1867 455.111 56.8C455.111 60.5867 454.257 63.84 452.551 66.56C450.844 69.28 448.404 71.3733 445.231 72.84C442.084 74.28 438.337 75 433.991 75H411.791ZM422.271 36.8H426.631C430.684 36.8 433.791 35.9467 435.951 34.24C438.111 32.5333 439.191 30.0933 439.191 26.92C439.191 23.72 438.124 21.2933 435.991 19.64C433.857 17.9867 430.737 17.16 426.631 17.16H422.271V36.8ZM422.271 66.76H430.591C435.044 66.76 438.417 65.88 440.711 64.12C443.031 62.36 444.191 59.8133 444.191 56.48C444.191 53.0933 443.004 50.48 440.631 48.64C438.284 46.8 434.937 45.88 430.591 45.88H422.271V66.76ZM465.689 75V6.2H475.649V75H465.689ZM511.199 76.28C506.773 76.28 502.773 75.36 499.199 73.52C495.653 71.68 492.839 69.12 490.759 65.84C488.679 62.56 487.639 58.7867 487.639 54.52C487.639 50.2267 488.679 46.4533 490.759 43.2C492.839 39.92 495.653 37.36 499.199 35.52C502.746 33.68 506.746 32.76 511.199 32.76C515.626 32.76 519.613 33.68 523.159 35.52C526.733 37.36 529.546 39.92 531.599 43.2C533.679 46.4533 534.719 50.2267 534.719 54.52C534.719 58.7867 533.679 62.56 531.599 65.84C529.546 69.12 526.733 71.68 523.159 73.52C519.613 75.36 515.626 76.28 511.199 76.28ZM511.199 67.72C513.706 67.72 515.946 67.16 517.919 66.04C519.919 64.8933 521.493 63.3333 522.639 61.36C523.786 59.36 524.359 57.08 524.359 54.52C524.359 51.9333 523.786 49.6533 522.639 47.68C521.493 45.68 519.919 44.12 517.919 43C515.946 41.88 513.706 41.32 511.199 41.32C508.719 41.32 506.479 41.88 504.479 43C502.479 44.12 500.906 45.68 499.759 47.68C498.613 49.6533 498.039 51.9333 498.039 54.52C498.039 57.08 498.613 59.36 499.759 61.36C500.906 63.3333 502.479 64.8933 504.479 66.04C506.479 67.16 508.719 67.72 511.199 67.72ZM565.903 97C560.516 97 555.969 95.9867 552.263 93.96C548.583 91.9333 545.889 88.9733 544.183 85.08L552.343 81.16C553.516 83.3733 555.329 85.1333 557.783 86.44C560.236 87.7733 562.943 88.44 565.903 88.44C568.516 88.44 570.823 87.92 572.823 86.88C574.823 85.84 576.396 84.36 577.543 82.44C578.689 80.5467 579.262 78.3067 579.262 75.72V68.44C577.503 70.8933 575.289 72.8133 572.623 74.2C569.983 75.5867 567.089 76.28 563.943 76.28C560.209 76.28 556.809 75.3467 553.743 73.48C550.676 71.6133 548.236 69.04 546.423 65.76C544.609 62.48 543.703 58.7333 543.703 54.52C543.703 50.3333 544.583 46.6133 546.343 43.36C548.129 40.08 550.556 37.4933 553.623 35.6C556.716 33.7067 560.236 32.76 564.183 32.76C567.329 32.76 570.223 33.4267 572.863 34.76C575.529 36.0933 577.663 37.9467 579.262 40.32V34.04H589.223V76.12C589.223 80.3333 588.343 84 586.583 87.12C584.849 90.2667 582.249 92.6933 578.783 94.4C575.316 96.1333 571.023 97 565.903 97ZM566.783 67.76C569.289 67.76 571.503 67.2 573.423 66.08C575.343 64.9333 576.849 63.3733 577.943 61.4C579.036 59.4 579.583 57.12 579.583 54.56C579.583 52 579.023 49.72 577.903 47.72C576.809 45.6933 575.303 44.12 573.383 43C571.489 41.8533 569.316 41.28 566.863 41.28C564.409 41.28 562.223 41.8533 560.303 43C558.383 44.12 556.876 45.6933 555.783 47.72C554.689 49.72 554.143 52 554.143 54.56C554.143 57.12 554.676 59.4 555.743 61.4C556.836 63.3733 558.329 64.9333 560.223 66.08C562.143 67.2 564.329 67.76 566.783 67.76Z" />
+        </svg>
+
+
+      </a>
+
+      <!-- other action buttons -->
+      <div class="flex items-center justify-center pr-4 space-x-4">
+
+        <a href=""
+          class="text-sm font-bold text-center uppercase text-calcut-navy hover:underline hover:cursor-pointer">
+          About
+        </a>
+
+        <a href=""
+          class="text-sm font-bold text-center uppercase text-calcut-navy hover:underline hover:cursor-pointer">
+          Pricing
+        </a>
+
+        <a href=""
+          class="px-6 py-2 text-lg font-extrabold text-center uppercase transition-all duration-300 rounded-full text-calcut-white bg-calcut-navy hover:bg-calcut-blue hover:cursor-pointer">
+          Try Calcut Now
+        </a>
+
+      </div>
+    </nav>
+
+
+    <header class="max-w-6xl mx-auto mt-20">
+      <!-- <div class="grid grid-flow-col grid-cols-3 gap-4"> -->
+      <div class="flex flex-col space-x-4 space-y-4 md:flex-row">
+
+        <!-- * Main -->
+        <div class="md:grow">
+          <!-- article -->
+          <article
+            class="transition-all duration-300 border border-opacity-0 bg-blue-200/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+              </div>
+
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-5 text-left">
+                <header>
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                  </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-4xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      Published <time>1 day ago</time>
+                    </span>
+                  </div>
+                </header>
+
+                <!-- description -->
+                <div class="mt-6 text-sm">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
+                </div>
+
+                <footer class="flex items-center justify-between mt-8">
+                  <div class="flex items-center text-sm">
+                    <img src="img/calcut.jpg" class="inline w-12 h-12 rounded-full aspect-square" alt="" width="60">
+                    <div class="ml-3">
+                      <h3 class="font-bold">Cephas Brian</h3>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+                  <div>
+                    <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                      More</a>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- * side articles -->
+        <div class="md:grow-0">
+          <article
+            class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+              </div>
+
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                  </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
+                </div>
+
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4">
+                  <div class="flex items-center text-xs">
+                    <div class="ml-3">
+                      <h5 class="font-bold">Cephas Brian</h5>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+                  <div>
+                    <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                      More</a>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- main -->
+    <main class="max-w-6xl mx-auto mt-20 space-y-10">
+      <!--* 2 articles -->
+      <div class="flex mt-8 space-x-4">
+        <article
+          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+          <div class="flex flex-col">
+            <!-- image -->
+            <div class="w-full">
+              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+            </div>
+
+            <!-- contents -->
+            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+              <!-- header -->
+              <header>
+                <!-- tags -->
+                <div class="space-x-2">
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                </div>
+                <div class="mt-2">
+                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    doloribus?</h1>
+                  <span class="mt-2 text-xs text-calcut-navy/50">
+                    <time>April 25th 2024</time>
+                  </span>
+                </div>
+              </header>
+              <!-- description -->
+              <div class="mt-2 text-xs">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                  reiciendis soluta!</p>
+              </div>
+
+              <!-- writer -->
+              <footer class="flex items-center justify-between mt-4">
+                <div class="flex items-center text-xs">
+                  <div class="ml-3">
+                    <h5 class="font-bold">Cephas Brian</h5>
+                    <p>Co-Founder, Calcut</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                    More</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+          <div class="flex flex-col">
+            <!-- image -->
+            <div class="w-full">
+              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+            </div>
+
+            <!-- contents -->
+            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+              <!-- header -->
+              <header>
+                <!-- tags -->
+                <div class="space-x-2">
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                </div>
+                <div class="mt-2">
+                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    doloribus?</h1>
+                  <span class="mt-2 text-xs text-calcut-navy/50">
+                    <time>April 25th 2024</time>
+                  </span>
+                </div>
+              </header>
+              <!-- description -->
+              <div class="mt-2 text-xs">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                  reiciendis soluta!</p>
+              </div>
+
+              <!-- writer -->
+              <footer class="flex items-center justify-between mt-4">
+                <div class="flex items-center text-xs">
+                  <div class="ml-3">
+                    <h5 class="font-bold">Cephas Brian</h5>
+                    <p>Co-Founder, Calcut</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                    More</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- * 3 articles -->
+      <div class="flex mt-8 space-x-4">
+        <article
+          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+          <div class="flex flex-col">
+            <!-- image -->
+            <div class="w-full">
+              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+            </div>
+
+            <!-- contents -->
+            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+              <!-- header -->
+              <header>
+                <!-- tags -->
+                <div class="space-x-2">
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                </div>
+                <div class="mt-2">
+                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    doloribus?</h1>
+                  <span class="mt-2 text-xs text-calcut-navy/50">
+                    <time>April 25th 2024</time>
+                  </span>
+                </div>
+              </header>
+              <!-- description -->
+              <div class="mt-2 text-xs">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                  reiciendis soluta!</p>
+              </div>
+
+              <!-- writer -->
+              <footer class="flex items-center justify-between mt-4">
+                <div class="flex items-center text-xs">
+                  <div class="ml-3">
+                    <h5 class="font-bold">Cephas Brian</h5>
+                    <p>Co-Founder, Calcut</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                    More</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article
+          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+          <div class="flex flex-col">
+            <!-- image -->
+            <div class="w-full">
+              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+            </div>
+
+            <!-- contents -->
+            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+              <!-- header -->
+              <header>
+                <!-- tags -->
+                <div class="space-x-2">
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                </div>
+                <div class="mt-2">
+                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    doloribus?</h1>
+                  <span class="mt-2 text-xs text-calcut-navy/50">
+                    <time>April 25th 2024</time>
+                  </span>
+                </div>
+              </header>
+              <!-- description -->
+              <div class="mt-2 text-xs">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                  reiciendis soluta!</p>
+              </div>
+
+              <!-- writer -->
+              <footer class="flex items-center justify-between mt-4">
+                <div class="flex items-center text-xs">
+                  <div class="ml-3">
+                    <h5 class="font-bold">Cephas Brian</h5>
+                    <p>Co-Founder, Calcut</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                    More</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- 3 -->
+        <article
+          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+          <div class="flex flex-col">
+            <!-- image -->
+            <div class="w-full">
+              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+            </div>
+
+            <!-- contents -->
+            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+              <!-- header -->
+              <header>
+                <!-- tags -->
+                <div class="space-x-2">
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                  <a href=""
+                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                </div>
+                <div class="mt-2">
+                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    doloribus?</h1>
+                  <span class="mt-2 text-xs text-calcut-navy/50">
+                    <time>April 25th 2024</time>
+                  </span>
+                </div>
+              </header>
+              <!-- description -->
+              <div class="mt-2 text-xs">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                  reiciendis soluta!</p>
+              </div>
+
+              <!-- writer -->
+              <footer class="flex items-center justify-between mt-4">
+                <div class="flex items-center text-xs">
+                  <div class="ml-3">
+                    <h5 class="font-bold">Cephas Brian</h5>
+                    <p>Co-Founder, Calcut</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
+                    More</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+  </section>
+
+
+  <!-- footer -->
+  <footer class="px-10 py-16 mt-16 bg-calcut-navy">
+
+  </footer>
+
+  <!-- end layout -->
+</body>
+
+</html>
