@@ -21,15 +21,15 @@
 <body class="font-mont bg-calcut-white">
 
   <!-- site layout -->
-  <section class="flex flex-col px-8 py-4 space-between">
+  <section class="flex flex-col px-4 py-6 md:px-6 space-between">
     <!-- nav bar -->
     <nav
-      class="fixed top-0 left-0 right-0 px-2 py-2 border-b sm:space-y-2 sm:space-x-2 border-calcut-navy/20 bg-calcut-white md:flex md:justify-between lg:flex md:px-2 sm:px-2 text-calcut-navy"
+      class="fixed top-0 left-0 right-0 px-2 py-2 space-x-2 space-y-2 border-b border-calcut-navy/20 bg-calcut-white md:flex md:justify-between lg:flex text-calcut-navy"
       id="main-nav">
 
       <a class="flex items-center justify-center ml-4">
 
-        <svg class="w-48 fill-current hover:cursor-pointer" viewBox="0 0 597 97" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-48 fill-current hover:cursor-pointer hover:fill-calcut-blue" viewBox="0 0 597 97" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M80 23.3333V16.6667C80 7.46333 72.54 0 63.3333 0H16.6667C7.46333 0 0 7.46333 0 16.6667V23.3333H33.3333V30H0V50H13.3333V56.6667H0V63.3333C0 72.5367 7.46333 80 16.6667 80H63.3333C72.54 80 80 72.5367 80 63.3333V56.6667H53.3333V50H80V30H63.3333V23.3333H80ZM26.6667 60C26.6667 61.84 25.1767 63.3333 23.3333 63.3333C21.49 63.3333 20 61.84 20 60V46.6667C20 44.8267 21.49 43.3333 23.3333 43.3333C25.1767 43.3333 26.6667 44.8267 26.6667 46.6667V60ZM36.6667 60C36.6667 61.84 35.1767 63.3333 33.3333 63.3333C31.49 63.3333 30 61.84 30 60V46.6667C30 44.8267 31.49 43.3333 33.3333 43.3333C35.1767 43.3333 36.6667 44.8267 36.6667 46.6667V60ZM46.6667 60C46.6667 61.84 45.1767 63.3333 43.3333 63.3333C41.49 63.3333 40 61.84 40 60V46.6667C40 44.8267 41.49 43.3333 43.3333 43.3333C45.1767 43.3333 46.6667 44.8267 46.6667 46.6667V60ZM46.6667 33.3333C46.6667 35.1733 45.1767 36.6667 43.3333 36.6667C41.49 36.6667 40 35.1733 40 33.3333V20C40 18.16 41.49 16.6667 43.3333 16.6667C45.1767 16.6667 46.6667 18.16 46.6667 20V33.3333ZM56.6667 33.3333C56.6667 35.1733 55.1767 36.6667 53.3333 36.6667C51.49 36.6667 50 35.1733 50 33.3333V20C50 18.16 51.49 16.6667 53.3333 16.6667C55.1767 16.6667 56.6667 18.16 56.6667 20V33.3333Z" />
           <path
@@ -43,33 +43,32 @@
       <div class="flex items-center justify-center pr-4 space-x-4">
 
         <a href=""
-          class="text-sm font-bold text-center uppercase text-calcut-navy hover:underline hover:cursor-pointer">
+          class="text-sm font-bold text-center uppercase text-calcut-navy hover:text-calcut-blue hover:underline hover:cursor-pointer">
           About
         </a>
 
         <a href=""
-          class="text-sm font-bold text-center uppercase text-calcut-navy hover:underline hover:cursor-pointer">
+          class="text-sm font-bold text-center uppercase text-calcut-navy hover:text-calcut-blue hover:underline hover:cursor-pointer">
           Pricing
         </a>
 
         <a href=""
-          class="px-6 py-2 text-lg font-extrabold text-center uppercase transition-all duration-300 rounded-full text-calcut-white bg-calcut-navy hover:bg-calcut-blue hover:cursor-pointer">
+          class="px-6 py-2 font-extrabold text-center uppercase transition-all duration-300 rounded-full text-md text-calcut-white bg-calcut-navy hover:bg-calcut-blue hover:cursor-pointer">
           Try Calcut Now
         </a>
 
       </div>
     </nav>
 
+    <!-- * Main -->
+    <main class="max-w-6xl mx-auto mt-20 ">
+      <div class="grid grid-cols-1 gap-4 md:grid lg:grid md:grid-cols-3 lg:grid-cols-4">
 
-    <header class="max-w-6xl mx-auto mt-20">
-      <!-- <div class="grid grid-flow-col grid-cols-3 gap-4"> -->
-      <div class="flex flex-col space-x-4 space-y-4 md:flex-row">
-
-        <!-- * Main -->
-        <div class="md:grow">
+        <!--! header articles -->
+        <div class="md:col-span-3 lg:col-span-3">
           <!-- article -->
           <article
-            class="transition-all duration-300 border border-opacity-0 bg-blue-200/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+            class="transition-all duration-300 border border-opacity-0 group bg-blue-200/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl hover:cursor-pointer">
             <div class="flex flex-col">
               <!-- image -->
               <div class="w-full">
@@ -79,14 +78,16 @@
               <!-- contents -->
               <div class="flex-col items-start justify-between flex-1 p-5 text-left">
                 <header>
+                  <!-- tags -->
                   <div class="space-x-2">
                     <a href=""
                       class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
                     <a href=""
                       class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
                   </div>
+                  <!-- title -->
                   <div class="mt-2">
-                    <h1 class="mt-2 text-4xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    <h1 class="mt-2 text-4xl font-bold group-hover:underline group-hover:font-extrabold group-hover:text-calcut-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
                       doloribus?</h1>
                     <span class="mt-2 text-xs text-calcut-navy/50">
                       Published <time>1 day ago</time>
@@ -96,7 +97,8 @@
 
                 <!-- description -->
                 <div class="mt-6 text-sm">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
                     quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
                     reiciendis soluta!</p>
                 </div>
@@ -105,22 +107,70 @@
                   <div class="flex items-center text-sm">
                     <img src="img/calcut.jpg" class="inline w-12 h-12 rounded-full aspect-square" alt="" width="60">
                     <div class="ml-3">
-                      <h3 class="font-bold">Cephas Brian</h3>
+                      <h3 class="text-lg font-bold">Cephas Brian</h3>
                       <p>Co-Founder, Calcut</p>
                     </div>
                   </div>
-                  <div>
-                    <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                      More</a>
-                  </div>
+
                 </footer>
               </div>
             </div>
           </article>
         </div>
 
-        <!-- * side articles -->
-        <div class="md:grow-0">
+        <!-- ! side articles -->
+        <div class="space-y-4 md:space-y-0 lg:col-span-1 md:grid-cols-2 md:gap-4 md:grid lg:gap-0 lg:space-y-4 lg:flex-col lg:flex md:col-span-3">
+          <article
+            class="transition-colors duration-300 border group hover:cursor-pointer border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
+              </div>
+
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
+                  </div>
+                  <!-- title -->
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold group-hover:underline group-hover:font-extrabold group-hover:text-calcut-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
+                </div>
+
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4 space-x-4">
+                  <div class="flex items-center text-xs">
+                    <div>
+                      <h5 class="font-bold">Cephas Brian</h5>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+
+                </footer>
+              </div>
+            </div>
+          </article>
+
           <article
             class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
 
@@ -151,308 +201,293 @@
                 </header>
                 <!-- description -->
                 <div class="mt-2 text-xs">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
                     quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
                     reiciendis soluta!</p>
                 </div>
 
                 <!-- writer -->
-                <footer class="flex items-center justify-between mt-4">
+                <footer class="flex items-center justify-between mt-4 space-x-4">
                   <div class="flex items-center text-xs">
-                    <div class="ml-3">
+                    <div>
                       <h5 class="font-bold">Cephas Brian</h5>
                       <p>Co-Founder, Calcut</p>
                     </div>
                   </div>
-                  <div>
-                    <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                      More</a>
-                  </div>
+
                 </footer>
               </div>
             </div>
           </article>
-
         </div>
-      </div>
 
-    </header>
+        <!--! 2 articles -->
+        <div class="lg:col-span-2">
+          <article
+            class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
 
-
-    <!-- main -->
-    <main class="max-w-6xl mx-auto mt-20 space-y-10">
-      <!--* 2 articles -->
-      <div class="flex mt-8 space-x-4">
-        <article
-          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
-
-          <div class="flex flex-col">
-            <!-- image -->
-            <div class="w-full">
-              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
-            </div>
-
-            <!-- contents -->
-            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
-              <!-- header -->
-              <header>
-                <!-- tags -->
-                <div class="space-x-2">
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
-                </div>
-                <div class="mt-2">
-                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                    doloribus?</h1>
-                  <span class="mt-2 text-xs text-calcut-navy/50">
-                    <time>April 25th 2024</time>
-                  </span>
-                </div>
-              </header>
-              <!-- description -->
-              <div class="mt-2 text-xs">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
-                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
-                  reiciendis soluta!</p>
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
               </div>
 
-              <!-- writer -->
-              <footer class="flex items-center justify-between mt-4">
-                <div class="flex items-center text-xs">
-                  <div class="ml-3">
-                    <h5 class="font-bold">Cephas Brian</h5>
-                    <p>Co-Founder, Calcut</p>
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
                   </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
                 </div>
-                <div>
-                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                    More</a>
-                </div>
-              </footer>
+
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4 space-x-4">
+                  <div class="flex items-center text-xs">
+                    <div>
+                      <h5 class="font-bold">Cephas Brian</h5>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+
+                </footer>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
-        <article
-          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+        <div class="lg:col-span-2">
+          <article
+            class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
 
-          <div class="flex flex-col">
-            <!-- image -->
-            <div class="w-full">
-              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
-            </div>
-
-            <!-- contents -->
-            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
-              <!-- header -->
-              <header>
-                <!-- tags -->
-                <div class="space-x-2">
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
-                </div>
-                <div class="mt-2">
-                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                    doloribus?</h1>
-                  <span class="mt-2 text-xs text-calcut-navy/50">
-                    <time>April 25th 2024</time>
-                  </span>
-                </div>
-              </header>
-              <!-- description -->
-              <div class="mt-2 text-xs">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
-                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
-                  reiciendis soluta!</p>
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
               </div>
 
-              <!-- writer -->
-              <footer class="flex items-center justify-between mt-4">
-                <div class="flex items-center text-xs">
-                  <div class="ml-3">
-                    <h5 class="font-bold">Cephas Brian</h5>
-                    <p>Co-Founder, Calcut</p>
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
                   </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
                 </div>
-                <div>
-                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                    More</a>
-                </div>
-              </footer>
+
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4 space-x-4">
+                  <div class="flex items-center text-xs">
+                    <div>
+                      <h5 class="font-bold">Cephas Brian</h5>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+
+                </footer>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
-      </div>
 
-      <!-- * 3 articles -->
-      <div class="flex mt-8 space-x-4">
-        <article
-          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+        <!-- ! 3 articles -->
+        <div class="col-span-1">
+          <article
+            class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
 
-          <div class="flex flex-col">
-            <!-- image -->
-            <div class="w-full">
-              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
-            </div>
-
-            <!-- contents -->
-            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
-              <!-- header -->
-              <header>
-                <!-- tags -->
-                <div class="space-x-2">
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
-                </div>
-                <div class="mt-2">
-                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                    doloribus?</h1>
-                  <span class="mt-2 text-xs text-calcut-navy/50">
-                    <time>April 25th 2024</time>
-                  </span>
-                </div>
-              </header>
-              <!-- description -->
-              <div class="mt-2 text-xs">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
-                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
-                  reiciendis soluta!</p>
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
               </div>
 
-              <!-- writer -->
-              <footer class="flex items-center justify-between mt-4">
-                <div class="flex items-center text-xs">
-                  <div class="ml-3">
-                    <h5 class="font-bold">Cephas Brian</h5>
-                    <p>Co-Founder, Calcut</p>
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
                   </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
                 </div>
-                <div>
-                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                    More</a>
-                </div>
-              </footer>
+
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4 space-x-4">
+                  <div class="flex items-center text-xs">
+                    <div>
+                      <h5 class="font-bold">Cephas Brian</h5>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+
+                </footer>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
         <!-- 2 -->
-        <article
-          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+        <div class="lg:col-span-2">
+          <article
+            class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
 
-          <div class="flex flex-col">
-            <!-- image -->
-            <div class="w-full">
-              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
-            </div>
-
-            <!-- contents -->
-            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
-              <!-- header -->
-              <header>
-                <!-- tags -->
-                <div class="space-x-2">
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
-                </div>
-                <div class="mt-2">
-                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                    doloribus?</h1>
-                  <span class="mt-2 text-xs text-calcut-navy/50">
-                    <time>April 25th 2024</time>
-                  </span>
-                </div>
-              </header>
-              <!-- description -->
-              <div class="mt-2 text-xs">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
-                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
-                  reiciendis soluta!</p>
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
               </div>
 
-              <!-- writer -->
-              <footer class="flex items-center justify-between mt-4">
-                <div class="flex items-center text-xs">
-                  <div class="ml-3">
-                    <h5 class="font-bold">Cephas Brian</h5>
-                    <p>Co-Founder, Calcut</p>
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
                   </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
                 </div>
-                <div>
-                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                    More</a>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </article>
 
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4 space-x-4">
+                  <div class="flex items-center text-xs">
+                    <div>
+                      <h5 class="font-bold">Cephas Brian</h5>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+
+                </footer>
+              </div>
+            </div>
+          </article>
+        </div>
 
         <!-- 3 -->
-        <article
-          class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
+        <div class="lg:col-span-1 md:col-span-2">
+          <article
+            class="transition-colors duration-300 border border-opacity-5 bg-blue-100/40 border-calcut-blue hover:border-opacity-55 hover:bg-blue-200/60 rounded-xl">
 
-          <div class="flex flex-col">
-            <!-- image -->
-            <div class="w-full">
-              <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
-            </div>
-
-            <!-- contents -->
-            <div class="flex-col items-start justify-between flex-1 p-3 text-left">
-              <!-- header -->
-              <header>
-                <!-- tags -->
-                <div class="space-x-2">
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
-                  <a href=""
-                    class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
-                </div>
-                <div class="mt-2">
-                  <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                    doloribus?</h1>
-                  <span class="mt-2 text-xs text-calcut-navy/50">
-                    <time>April 25th 2024</time>
-                  </span>
-                </div>
-              </header>
-              <!-- description -->
-              <div class="mt-2 text-xs">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis debitis
-                  quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
-                  reiciendis soluta!</p>
+            <div class="flex flex-col">
+              <!-- image -->
+              <div class="w-full">
+                <img src="img/calcut_download.jpg" alt="Blog post illustration" class="rounded-t-lg">
               </div>
 
-              <!-- writer -->
-              <footer class="flex items-center justify-between mt-4">
-                <div class="flex items-center text-xs">
-                  <div class="ml-3">
-                    <h5 class="font-bold">Cephas Brian</h5>
-                    <p>Co-Founder, Calcut</p>
+              <!-- contents -->
+              <div class="flex-col items-start justify-between flex-1 p-3 text-left">
+                <!-- header -->
+                <header>
+                  <!-- tags -->
+                  <div class="space-x-2">
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-blue-600 uppercase border border-blue-600 rounded-full bg-blue-600/10">Techniques</a>
+                    <a href=""
+                      class="px-2 py-px text-xs font-semibold text-red-600 uppercase border border-red-600 rounded-full bg-red-600/10">Updates</a>
                   </div>
+                  <div class="mt-2">
+                    <h1 class="mt-2 text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                      doloribus?</h1>
+                    <span class="mt-2 text-xs text-calcut-navy/50">
+                      <time>April 25th 2024</time>
+                    </span>
+                  </div>
+                </header>
+                <!-- description -->
+                <div class="mt-2 text-xs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae beatae facilis
+                    debitis
+                    quisquam amet! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quisquam voluptatem
+                    reiciendis soluta!</p>
                 </div>
-                <div>
-                  <a href="" class="px-6 py-2 text-xs font-semibold bg-blue-600 rounded-full text-calcut-white">Read
-                    More</a>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </article>
 
+                <!-- writer -->
+                <footer class="flex items-center justify-between mt-4 space-x-4">
+                  <div class="flex items-center text-xs">
+                    <div>
+                      <h2 class="font-bold">Cephas Brian</h2>
+                      <p>Co-Founder, Calcut</p>
+                    </div>
+                  </div>
+
+                </footer>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </main>
-
   </section>
 
 
